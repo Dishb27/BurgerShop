@@ -1,0 +1,159 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #000;
+  padding: 10px 0;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #444;
+}
+
+/* Main Section */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Inventory Section */
+.inventory-section {
+  margin: 20px auto;
+  width: 90%;
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.inventory-table th,
+.inventory-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.inventory-table th {
+  background-color: #25466a;
+  color: #fff;
+}
+
+.update-btn,
+.delete-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.update-btn {
+  background-color: #837c6a;
+  color: #fff;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Add Item Section */
+.add-item-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 50%;
+}
+
+.add-item-section h2 {
+  color: #333;
+}
+
+.add-item-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-item-form label {
+  margin: 10px 0 5px;
+  text-align: left;
+}
+
+.add-item-form input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.add-btn {
+  padding: 10px;
+  background-color: #486b90;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #3c4f64;
+}
+
+/* Expired Items Section */
+.expired-items-section {
+  background-color: #ffdddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 50%;
+}
+
+.expired-items-section h2 {
+  color: #d9534f;
+}
+
+.expired-notifications ul {
+  list-style: disc;
+  text-align: left;
+}
+
+.expired-notifications li {
+  margin: 5px 0;
+  color: #d9534f;
+}

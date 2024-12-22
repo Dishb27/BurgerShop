@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Inventory</title>
+    <link rel="stylesheet" href="./css/store.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="customer.html">Customer</a></li>
+          <li><a href="order.html">Orders</a></li>
+          <li><a href="reports.html">Reports</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Food Inventory</h1>
+
+      <section class="inventory-section">
+        <table class="inventory-table">
+          <thead>
+            <tr>
+              <th>Item Code</th>
+              <th>Item Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Expiration Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Example rows -->
+            <tr>
+              <td>B1029</td>
+              <td>French Fries (Small)</td>
+              <td>LKR 500</td>
+              <td>10</td>
+              <td>Expired</td>
+              <td>
+                <button class="update-btn">Update</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>B1037</td>
+              <td>Baked Ravioli</td>
+              <td>LKR 1200</td>
+              <td>5</td>
+              <td>Expiring Soon</td>
+              <td>
+                <button class="update-btn">Update</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="add-item-section">
+        <h2>Add New Item</h2>
+        <form class="add-item-form">
+          <label for="item-name">Item Name</label>
+          <input
+            type="text"
+            id="item-name"
+            name="item-name"
+            placeholder="Enter item name"
+          />
+
+          <label for="category">Category</label>
+          <input
+            type="text"
+            id="category"
+            name="category"
+            placeholder="Enter category"
+          />
+
+          <label for="price">Price</label>
+          <input
+            type="number"
+            id="price"
+            name="price"
+            placeholder="Enter price"
+          />
+
+          <label for="quantity">Quantity</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            placeholder="Enter quantity"
+          />
+
+          <button type="submit" class="add-btn">Add Item</button>
+        </form>
+      </section>
+
+      <section class="expired-items-section">
+        <h2>Expired Items Notification</h2>
+        <div class="expired-notifications">
+          <ul>
+            <li>B1029 - French Fries (Small) - Expired</li>
+            <li>B1037 - Baked Ravioli - Expiring Soon!</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

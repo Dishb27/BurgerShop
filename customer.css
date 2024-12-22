@@ -1,0 +1,159 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #000;
+  padding: 10px 0;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #444;
+}
+
+main {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+/* Customer List Section */
+.customer-list {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.customer-table th,
+.customer-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.customer-table th {
+  background-color: #1a2d41;
+  color: white;
+}
+
+/* View Orders Section */
+.view-orders {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.search-bar button {
+  background-color: #2a415b;
+  color: white;
+  padding: 6px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #1f344a;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.order-table th,
+.order-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.order-table th {
+  background-color: #1c334c;
+  color: white;
+}
+
+/* Add Customer Section */
+.add-customer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.add-customer h2 {
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+form input {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+form button {
+  background-color: #2a4767;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #2a3a4a;
+}

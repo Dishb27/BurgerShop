@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate Reports</title>
+    <link rel="stylesheet" href="./css/reports.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="customer.html">Customer</a></li>
+          <li><a href="order.html">Orders</a></li>
+          <li><a href="reports.html">Reports</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="generate-reports">
+        <h2>Generate Reports</h2>
+        <form id="report-form">
+          <div>
+            <p>Select report type:</p>
+            <label>
+              <input type="radio" name="report-type" value="monthly" required />
+              Monthly Sales Report </label
+            ><br />
+            <label>
+              <input type="radio" name="report-type" value="annual" /> Annual
+              Sales Report </label
+            ><br />
+            <label>
+              <input type="radio" name="report-type" value="food-item" /> Food
+              Item Count </label
+            ><br />
+            <label>
+              <input type="radio" name="report-type" value="top-customers" />
+              Top Customers
+            </label>
+          </div>
+          <div>
+            <label for="report-date">Select Month/Year:</label>
+            <input type="month" id="report-date" name="report-date" required />
+          </div>
+          <button type="submit">Generate Report</button>
+        </form>
+      </section>
+      <section class="sample-report">
+        <h2>Sample Monthly Sales Report</h2>
+        <div class="sales-overview">
+          <p>Sales Overview:</p>
+          <ul>
+            <li>Total Sales: <span id="total-sales"></span></li>
+            <li>Total Orders: <span id="total-orders"></span></li>
+          </ul>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Item Name</th>
+              <th>Quantity Sold</th>
+              <th>Total Sales</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Rows will be populated dynamically -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <script src="./js/reports.js"></script>
+    <script src="./js/auth.js"></script>
+  </body>
+</html>
